@@ -1,4 +1,4 @@
-public class Employee extends Person {
+public abstract class Employee extends Person implements Eatable {
     private double salary;
     private String role;
     Employee(String name, int age, double salary, String role) {
@@ -12,7 +12,5 @@ public class Employee extends Person {
     public String getRole() {
         return role;
     }
-    public void work(){
-        System.out.println("Employee Role: "+ role);
-    }
+    abstract public void work();
 }
