@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Employee> employees = new ArrayList<Employee>();
-        employees.add(new Employee("John",21,3000,"Engineer"));
-        employees.add(new Employee("Moahmed",21,3000,"Engineer"));
+//        employees.add(new Employee("John",21,3000,"Engineer"));
+//        employees.add(new Employee("Moahmed",21,3000,"Engineer"));
         employees.add(new Chef("Ahmed",21,3000));
         employees.add(new Chef("Karim",21,3000));
         employees.add(new Waiter("Omar",21,3000));
@@ -13,9 +13,12 @@ public class Main {
         for(Employee e:employees){
             e.introduce();
             e.work();
+            e.eat();
             System.out.println("----------------------------");
         }
- //---------------------Sheet Asyout-------------------------//
+
+
+        //---------------------Sheet Asyout-------------------------//
 
         //-----------------------------------------------O----------------------------------------//
 
@@ -49,6 +52,7 @@ public class Main {
 //        } else if (num%2!=0) {
 //            System.out.println("Odd");
 //        }
+
 
 
     }
